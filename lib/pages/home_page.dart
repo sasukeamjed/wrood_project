@@ -87,7 +87,7 @@ class HomePageState extends State<HomePage> {
       child: Container(
         key: key,
         margin: EdgeInsets.all(10),
-        padding: EdgeInsets.only(top: 5.0),
+        padding: EdgeInsets.symmetric(vertical: 15.0),
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(image),
@@ -105,15 +105,15 @@ class HomePageState extends State<HomePage> {
             ),
           ],
         ),
-        child: Center(
-          child: FittedBox(
-            fit: BoxFit.fitHeight,
+        child: FittedBox(
+          child: Center(
             child: Column(
               children: <Widget>[
                 Image.asset(icon),
                 Text(
                   title,
                   textAlign: TextAlign.center,
+                  textScaleFactor: 6,
                   style: TextStyle(
                       fontWeight: FontWeight.w900,
                       color: Colors.black),

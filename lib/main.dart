@@ -79,12 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).accentColor,
         centerTitle: true,
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: currentPage,
-        ),
-      ),
+      body: currentPage,
       bottomNavigationBar: bmnav.BottomNav(
         color: Theme.of(context).accentColor,
         index: currentTap,
